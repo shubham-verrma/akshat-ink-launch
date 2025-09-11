@@ -13,12 +13,12 @@ const AuthorSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20 animate-glow"></div>
               <img 
-                src={authorPortrait} 
-                alt="Akshat Gupta - Bestselling Author"
+                src="/lovable-uploads/b33c9521-9b70-4fe6-b4c9-ccef8dc5f3c3.png" 
+                alt="Akshat Gupta - Bestselling Author holding The Hidden Hindu books"
                 className="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-golden border border-primary/20"
               />
               {/* Floating Stats */}
-              <div className="absolute -top-4 -right-4 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-card">
+              <div className="absolute -top-4 -right-4 z-20 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-card">
                 <div className="text-2xl font-bold text-primary">1.6M+</div>
                 <div className="text-sm text-muted-foreground">Followers</div>
               </div>
