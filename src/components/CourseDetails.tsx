@@ -7,40 +7,40 @@ import { BookOpen, FileText, Clock, CheckCircle, Play, Award } from "lucide-reac
 const CourseDetails = () => {
   const modules = [
     {
-      title: "Foundation of Storytelling",
-      description: "Learn the core principles that make stories unforgettable",
+      title: "Unveiling the Fiction Writer Within",
+      description: "Discover your unique writing voice and creative potential",
       duration: "2 hours",
-      assignment: "Character Development Exercise"
+      assignment: "Self-Discovery Writing Exercise"
     },
     {
-      title: "Character Creation & Development",
-      description: "Build compelling characters that readers will love",
+      title: "Shaping Your Fictional World",
+      description: "Create immersive worlds that captivate your readers",
       duration: "2.5 hours", 
-      assignment: "Create Your Protagonist"
-    },
-    {
-      title: "Plot Structure & Pacing",
-      description: "Master the art of plot construction and narrative flow",
-      duration: "3 hours",
-      assignment: "Plot Outline Creation"
-    },
-    {
-      title: "World Building Techniques",
-      description: "Create immersive worlds that captivate readers",
-      duration: "2.5 hours",
       assignment: "World Building Project"
     },
     {
-      title: "Dialogue & Voice",
-      description: "Write authentic dialogue and develop your unique voice",
-      duration: "2 hours",
-      assignment: "Dialogue Writing Practice"
+      title: "Mastering Story Structure & Flow",
+      description: "Learn the architecture of compelling narratives",
+      duration: "3 hours",
+      assignment: "Story Structure Analysis"
     },
     {
-      title: "From Manuscript to Publication",
-      description: "Navigate the publishing world and market your work",
+      title: "Balancing Emotions and Developing Characters",
+      description: "Create multi-dimensional characters that resonate",
+      duration: "2.5 hours",
+      assignment: "Character Development Portfolio"
+    },
+    {
+      title: "Connecting with Your Audience and Maintaining Writing",
+      description: "Build lasting relationships with readers and sustain your craft",
       duration: "2 hours",
-      assignment: "Publishing Strategy Plan"
+      assignment: "Audience Engagement Strategy"
+    },
+    {
+      title: "Enhancing Narration Skills and Understanding Your Audience",
+      description: "Master the art of storytelling and reader psychology",
+      duration: "2 hours",
+      assignment: "Narration Improvement Project"
     }
   ];
 
@@ -71,8 +71,8 @@ const CourseDetails = () => {
           {/* Course Overview Image */}
           <div className="relative mb-16">
             <img 
-              src={courseModules} 
-              alt="Course Modules Overview"
+              src="/lovable-uploads/f3edb4b3-3d24-4165-9e6b-668788712df9.png" 
+              alt="Think To Ink: Book and Film Writing Course with Akshat Gupta"
               className="w-full rounded-2xl shadow-golden border border-primary/20"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-2xl"></div>
@@ -144,7 +144,7 @@ const CourseDetails = () => {
               <Button 
                 variant="cta" 
                 size="xl"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
               >
                 <BookOpen className="w-5 h-5 mr-2" />
                 Enroll Now - Limited Time Offer

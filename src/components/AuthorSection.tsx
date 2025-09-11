@@ -86,7 +86,7 @@ const AuthorSection = () => {
               <Button 
                 variant="hero" 
                 size="lg"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
               >
                 Learn From The Master
               </Button>

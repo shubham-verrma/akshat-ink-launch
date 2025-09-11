@@ -5,7 +5,7 @@ import { Play, Star, Users, BookOpen } from "lucide-react";
 
 const Hero = () => {
   const scrollToPrice = () => {
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank');
   };
 
   return (

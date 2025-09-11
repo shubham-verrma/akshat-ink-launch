@@ -19,7 +19,7 @@ const Footer = () => {
           <Button 
             variant="cta" 
             size="xl"
-            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
           >
             🚀 Start Your Transformation Today
           </Button>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </button>
                 <button 
                   className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
                 >
                   Pricing
                 </button>
