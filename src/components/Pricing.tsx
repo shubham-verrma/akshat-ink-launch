@@ -5,23 +5,20 @@ import { CheckCircle, Clock, Shield, Award, CreditCard, Smartphone } from "lucid
 
 const Pricing = () => {
   const features = [
-    "6 Comprehensive Video Modules (14+ Hours)",
+    "6 Comprehensive Video Modules (6 Hours)",
     "6 Practical Writing Assignments",
-    "Downloadable Resources & Templates", 
+    "Online Access & Streaming", 
     "Character Development Worksheets",
     "Plot Structure Frameworks",
     "World Building Guides",
     "Publishing Strategy Roadmap",
     "Industry Insider Tips & Secrets",
     "Lifetime Access - No Expiry",
-    "Mobile & Desktop Compatible",
-    "Certificate of Completion",
-    "30-Day Money Back Guarantee"
+    "Mobile & Desktop Compatible"
   ];
 
   const handleEnrollNow = () => {
-    // In a real implementation, this would integrate with a payment gateway
-    alert("Redirecting to secure payment... 🚀");
+    window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank');
   };
 
   return (
@@ -31,7 +28,7 @@ const Pricing = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-gradient">Special Launch Offer</span>
+              <span className="text-gradient">LIMITED TIME OFFER</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Transform your writing dreams into reality with this limited-time offer. 
@@ -60,8 +57,8 @@ const Pricing = () => {
               <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="text-5xl md:text-6xl font-bold text-primary">₹2,499</div>
                 <div className="text-right">
-                  <div className="text-2xl text-muted-foreground line-through">₹2,999</div>
-                  <Badge variant="destructive" className="animate-bounce">Save ₹500</Badge>
+                  <div className="text-2xl text-muted-foreground line-through">₹5,000</div>
+                  <Badge variant="destructive" className="animate-bounce">Save ₹2,501</Badge>
                 </div>
               </div>
 
@@ -109,21 +106,16 @@ const Pricing = () => {
               </div>
 
               {/* Guarantees */}
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="text-center bg-muted/10 rounded-xl p-4">
-                  <Shield className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="font-semibold text-sm">30-Day Guarantee</div>
-                  <div className="text-xs text-muted-foreground">Full Refund</div>
-                </div>
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="text-center bg-muted/10 rounded-xl p-4">
                   <Smartphone className="w-8 h-8 text-secondary mx-auto mb-2" />
                   <div className="font-semibold text-sm">Mobile Friendly</div>
                   <div className="text-xs text-muted-foreground">Learn Anywhere</div>
                 </div>
                 <div className="text-center bg-muted/10 rounded-xl p-4">
-                  <Award className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <div className="font-semibold text-sm">Certificate</div>
-                  <div className="text-xs text-muted-foreground">On Completion</div>
+                  <Clock className="w-8 h-8 text-accent mx-auto mb-2" />
+                  <div className="font-semibold text-sm">At Your Pace</div>
+                  <div className="text-xs text-muted-foreground">Learn When You Want</div>
                 </div>
               </div>
 
@@ -141,7 +133,7 @@ const Pricing = () => {
                   variant="outline-glow" 
                   size="lg" 
                   className="w-full"
-                  onClick={() => window.open('https://wa.me/919999999999?text=Hi! I have questions about the Think to Ink course', '_blank')}
+                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I have questions about the Think to Ink course', '_blank')}
                 >
                   💬 Have Questions? WhatsApp Us
                 </Button>

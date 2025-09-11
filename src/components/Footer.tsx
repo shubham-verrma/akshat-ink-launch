@@ -80,7 +80,7 @@ const Footer = () => {
                 </button>
                 <button 
                   className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.open('https://wa.me/919999999999?text=Hi! I need support', '_blank')}
+                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need support', '_blank')}
                 >
                   Support
                 </button>
@@ -101,8 +101,8 @@ const Footer = () => {
                 <div>✓ 6 Assignments</div>
                 <div>✓ Lifetime Access</div>
                 <div>✓ Mobile Compatible</div>
-                <div>✓ Certificate Included</div>
-                <div>✓ 30-Day Guarantee</div>
+                <div>✓ Expert Guidance</div>
+                <div>✓ Self-Paced Learning</div>
               </div>
             </div>
 
@@ -126,7 +126,7 @@ const Footer = () => {
                   variant="outline-glow" 
                   size="sm" 
                   className="mt-4"
-                  onClick={() => window.open('https://wa.me/919999999999?text=Hi! I need help with the course', '_blank')}
+                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need help with the course', '_blank')}
                 >
                   WhatsApp Support
                 </Button>
@@ -149,9 +149,9 @@ const Footer = () => {
                 </button>
                 <button 
                   className="hover:text-primary transition-colors"
-                  onClick={() => alert('Refund Policy')}
+                  onClick={() => alert('Terms & Conditions')}
                 >
-                  Refund Policy
+                  Terms & Conditions
                 </button>
                 <button 
                   className="hover:text-primary transition-colors"

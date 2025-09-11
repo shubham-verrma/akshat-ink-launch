@@ -25,12 +25,12 @@ const FAQ = () => {
       answer: "No special software required! You can write using any word processor you're comfortable with - MS Word, Google Docs, or even pen and paper. The course focuses on storytelling techniques, not specific tools."
     },
     {
-      question: "Is there a money-back guarantee?",
-      answer: "Yes! We offer a 30-day money-back guarantee. If you're not completely satisfied with the course content within 30 days of purchase, we'll refund your full payment, no questions asked."
+      question: "What support do I get during the course?",
+      answer: "You have access to our WhatsApp support for any technical issues or questions about course content. Our team responds within 24 hours to help you succeed."
     },
     {
-      question: "Will I get a certificate after completing the course?",
-      answer: "Yes! Upon completing all 6 modules and assignments, you'll receive a digital certificate of completion that you can add to your portfolio or share on social media."
+      question: "How long does it take to complete the course?",
+      answer: "The course is self-paced, so you can complete it according to your schedule. Each module is about 1 hour, so you could finish in a weekend or spread it over several weeks - it's entirely up to you!"
     },
     {
       question: "How is this different from free writing content online?",
@@ -92,7 +92,7 @@ const FAQ = () => {
               <Button 
                 variant="cta" 
                 size="lg"
-                onClick={() => window.open('https://wa.me/919999999999?text=Hi! I have questions about the Think to Ink course', '_blank')}
+                onClick={() => window.open('https://wa.me/917477077189?text=Hi! I have questions about the Think to Ink course', '_blank')}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp Us Now

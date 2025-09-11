@@ -46,7 +46,7 @@ const CourseDetails = () => {
 
   const features = [
     "Pre-recorded video lessons for lifetime access",
-    "Downloadable resources and templates",
+    "Online streaming platform access",
     "Practical assignments after each module",
     "Industry insights from a bestselling author",
     "Step-by-step writing guidance",
@@ -80,15 +80,15 @@ const CourseDetails = () => {
               <div className="flex flex-wrap gap-3 justify-center">
                 <Badge variant="secondary" className="bg-primary/20 text-primary">
                   <Clock className="w-4 h-4 mr-1" />
-                  14+ Hours Content
+                  6 Hours Content
                 </Badge>
                 <Badge variant="secondary" className="bg-secondary/20 text-secondary">
                   <FileText className="w-4 h-4 mr-1" />
                   6 Assignments
                 </Badge>
                 <Badge variant="secondary" className="bg-accent/20 text-accent">
-                  <Award className="w-4 h-4 mr-1" />
-                  Certificate Included
+                  <Play className="w-4 h-4 mr-1" />
+                  At Your Own Pace
                 </Badge>
               </div>
             </div>
