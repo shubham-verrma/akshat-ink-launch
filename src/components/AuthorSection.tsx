@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import authorPortrait from "@/assets/author-portrait.jpg";
+import authorPortrait from "@/assets/akshat-gupta-portrait.jpg";
 import { Instagram, BookOpen, Podcast, Award } from "lucide-react";
 
 const AuthorSection = () => {
