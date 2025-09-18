@@ -46,7 +46,7 @@ const CourseDetails = () => {
 
   const features = [
     "Pre-recorded video lessons for lifetime access",
-    "Online streaming platform access",
+    "Accessible on mobile phone and laptop",
     "Practical assignments after each module",
     "Industry insights from a bestselling author",
     "Step-by-step writing guidance",
@@ -114,7 +114,7 @@ const CourseDetails = () => {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm">
                       <Play className="w-4 h-4 text-primary" />
-                      <span>{module.duration} of content</span>
+                      <span>Approximate 1 hour of videos, then assignments</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <FileText className="w-4 h-4 text-secondary" />

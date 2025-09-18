@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import AuthorSection from "@/components/AuthorSection";
+import MediaCoverage from "@/components/MediaCoverage";
 import CourseDetails from "@/components/CourseDetails";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
@@ -11,6 +12,7 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Hero />
       <AuthorSection />
+      <MediaCoverage />
       <CourseDetails />
       <Testimonials />
       <Pricing />

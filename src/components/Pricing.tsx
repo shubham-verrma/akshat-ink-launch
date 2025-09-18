@@ -10,7 +10,6 @@ const Pricing = () => {
     "Online Access & Streaming", 
     "Character Development Worksheets",
     "Plot Structure Frameworks",
-    "World Building Guides",
     "Publishing Strategy Roadmap",
     "Industry Insider Tips & Secrets",
     "Lifetime Access - No Expiry",
@@ -39,8 +38,8 @@ const Pricing = () => {
           {/* Main Pricing Card */}
           <Card className="bg-gradient-card border-2 border-primary/30 shadow-golden relative overflow-hidden">
             {/* Popular Badge */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <Badge variant="destructive" className="bg-gradient-cta text-accent-foreground px-6 py-2 text-sm font-bold animate-pulse">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+              <Badge variant="destructive" className="bg-gradient-cta text-accent-foreground px-6 py-2 text-sm font-bold animate-pulse shadow-lg">
                 🔥 LIMITED TIME OFFER
               </Badge>
             </div>

@@ -88,7 +88,7 @@ const AuthorSection = () => {
                 size="lg"
                 onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
               >
-                Learn From The Master
+                Learn from India's Best selling author
               </Button>
             </div>
           </div>

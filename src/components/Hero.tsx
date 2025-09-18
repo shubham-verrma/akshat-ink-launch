@@ -89,14 +89,18 @@ const Hero = () => {
         </div>
 
         {/* Course Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">6</div>
-            <div className="text-muted-foreground">Modules</div>
+            <div className="text-3xl font-bold text-primary">5000+</div>
+            <div className="text-muted-foreground">Students Enrolled</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-primary">150+</div>
+            <div className="text-muted-foreground">Books Published</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-primary">6</div>
-            <div className="text-muted-foreground">Assignments</div>
+            <div className="text-muted-foreground">Modules</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-primary">∞</div>
