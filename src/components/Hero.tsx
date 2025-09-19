@@ -45,10 +45,16 @@ const Hero = () => {
               1.6M Instagram
             </a>
           </Badge>
-          <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap">
-            <BookOpen className="w-3 h-3 md:w-4 md:h-4 mr-1" />
-            Bestselling Author
-          </Badge>
+          <a
+            href="https://www.amazon.in/dp/B0CK3Y94R9?ref=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&ref_=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&social_share=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&bestFormat=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap hover:bg-secondary/30 transition-colors cursor-pointer">
+              <BookOpen className="w-3 h-3 md:w-4 md:h-4 mr-1" />
+              Bestselling Author
+            </Badge>
+          </a>
           <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap">
             <Users className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             Major Podcasts
