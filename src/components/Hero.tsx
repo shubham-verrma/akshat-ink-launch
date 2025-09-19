@@ -70,7 +70,7 @@ const Hero = () => {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-          Learn the secrets of fiction writing from <strong className="text-primary">Akshat Gupta</strong>, 
+          Learn the secrets of fiction and script writing from <strong className="text-primary">Akshat Gupta</strong>, 
           bestselling author of "The Hidden Hindu" series
         </p>
 
