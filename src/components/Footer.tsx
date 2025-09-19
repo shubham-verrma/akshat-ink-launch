@@ -42,21 +42,21 @@ const Footer = () => {
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  onClick={() => window.open('https://instagram.com/akshatgupta', '_blank')}
+                  onClick={() => window.open('https://www.instagram.com/authorakshatgupta/?hl=en', '_blank')}
                 >
                   <Instagram className="w-5 h-5" />
                 </Button>
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  onClick={() => window.open('https://youtube.com/akshatgupta', '_blank')}
+                  onClick={() => window.open('https://www.youtube.com/@AkshatGuptaAuthor', '_blank')}
                 >
                   <Youtube className="w-5 h-5" />
                 </Button>
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  onClick={() => window.open('https://twitter.com/akshatgupta', '_blank')}
+                  onClick={() => window.open('https://x.com/authorakshat?s=11', '_blank')}
                 >
                   <Twitter className="w-5 h-5" />
                 </Button>

@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import authorPortrait from "@/assets/akshat-gupta-portrait.jpg";
-import { Instagram, BookOpen, Podcast, Award } from "lucide-react";
+import { Instagram, BookOpen, Podcast, Award, Youtube, Twitter } from "lucide-react";
 
 const AuthorSection = () => {
   return (
@@ -99,6 +99,34 @@ const AuthorSection = () => {
                 and deep understanding of ancient wisdom. His ability to weave modern narratives with timeless 
                 truths has made him one of India's most sought-after authors and storytelling experts.
               </p>
+
+              {/* Social Links */}
+              <div className="flex gap-3 mb-6">
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className="border border-primary/20 hover:border-primary/40"
+                  onClick={() => window.open('https://www.instagram.com/authorakshatgupta/?hl=en', '_blank')}
+                >
+                  <Instagram className="w-5 h-5" />
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className="border border-primary/20 hover:border-primary/40"
+                  onClick={() => window.open('https://www.youtube.com/@AkshatGuptaAuthor', '_blank')}
+                >
+                  <Youtube className="w-5 h-5" />
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className="border border-primary/20 hover:border-primary/40"
+                  onClick={() => window.open('https://x.com/authorakshat?s=11', '_blank')}
+                >
+                  <Twitter className="w-5 h-5" />
+                </Button>
+              </div>
 
               {/* CTA */}
               <Button 
