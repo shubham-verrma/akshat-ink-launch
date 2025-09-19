@@ -24,17 +24,24 @@ const Hero = () => {
       
       <div className="relative z-10 container px-4 mx-auto text-center animate-fade-in-up">
         {/* Social Proof Badges */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
-          <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30 backdrop-blur-sm">
-            <Star className="w-4 h-4 mr-1 fill-current" />
-            1.6M Instagram Followers
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
+          <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30 backdrop-blur-sm text-xs md:text-sm">
+            <Star className="w-3 h-3 md:w-4 md:h-4 mr-1 fill-current" />
+            <a 
+              href="https://www.instagram.com/authorakshatgupta/?hl=en" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary/80 transition-colors"
+            >
+              1.6M Instagram Followers
+            </a>
           </Badge>
-          <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm">
-            <BookOpen className="w-4 h-4 mr-1" />
+          <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm text-xs md:text-sm">
+            <BookOpen className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             Bestselling Author
           </Badge>
-          <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 backdrop-blur-sm">
-            <Users className="w-4 h-4 mr-1" />
+          <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 backdrop-blur-sm text-xs md:text-sm">
+            <Users className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             Featured on Major Podcasts
           </Badge>
         </div>
@@ -53,36 +60,36 @@ const Hero = () => {
         </p>
 
         {/* Course Title */}
-        <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 mb-8 max-w-2xl mx-auto shadow-card">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+        <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-4 md:p-6 mb-8 max-w-2xl mx-auto shadow-card">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-2">
             Think to Ink
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Book and Film Writing Masterclass
           </p>
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <span className="text-3xl font-bold text-primary">₹2,499</span>
-            <span className="text-xl text-muted-foreground line-through">₹2,999</span>
-            <Badge variant="destructive" className="animate-pulse">17% OFF</Badge>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4">
+            <span className="text-2xl md:text-3xl font-bold text-primary">₹2,499</span>
+            <span className="text-lg md:text-xl text-muted-foreground line-through">₹5,000</span>
+            <Badge variant="destructive" className="animate-pulse text-xs md:text-sm">50% OFF</Badge>
           </div>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center items-center mb-12 px-4">
           <Button 
             variant="cta" 
             size="xl" 
             onClick={scrollToPrice}
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto text-sm md:text-base"
           >
-            <Play className="w-5 h-5 mr-2" />
+            <Play className="w-4 h-4 md:w-5 md:h-5 mr-2" />
             Start Writing Today
           </Button>
           <Button 
             variant="outline-glow" 
             size="lg"
             onClick={() => document.getElementById('course-details')?.scrollIntoView({ behavior: 'smooth' })}
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto text-sm md:text-base"
           >
             View Course Details
           </Button>

@@ -95,15 +95,22 @@ const MediaCoverage = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-scroll gap-6" style={{
-            animation: 'scroll 40s linear infinite',
-            width: 'calc(320px * 22)' // Doubled for seamless loop
-          }}>
+          <div 
+            className="flex animate-scroll gap-4 md:gap-6" 
+            style={{
+              animation: 'scroll 40s linear infinite',
+              width: 'calc(280px * 22)' // Adjusted for mobile
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.animationPlayState = 'paused'}
+            onMouseLeave={(e) => e.currentTarget.style.animationPlayState = 'running'}
+            onTouchStart={(e) => e.currentTarget.style.animationPlayState = 'paused'}
+            onTouchEnd={(e) => e.currentTarget.style.animationPlayState = 'running'}
+          >
             {/* Duplicate articles for seamless scrolling */}
             {[...mediaArticles, ...mediaArticles].map((article, index) => (
               <Card 
                 key={index}
-                className="min-w-[300px] bg-card/80 hover:bg-card transition-all duration-300 border-primary/20 shadow-card cursor-pointer group"
+                className="min-w-[260px] md:min-w-[300px] bg-card/80 hover:bg-card transition-all duration-300 border-primary/20 shadow-card cursor-pointer group"
                 onClick={() => window.open(article.url, '_blank')}
               >
                 <CardContent className="p-6">
@@ -136,11 +143,18 @@ const MediaCoverage = () => {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-320px * 11));
+            transform: translateX(calc(-280px * 11));
           }
         }
-        .animate-scroll:hover {
-          animation-play-state: paused;
+        @media (min-width: 768px) {
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-320px * 11));
+            }
+          }
         }
       `}</style>
     </section>

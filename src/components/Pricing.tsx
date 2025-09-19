@@ -7,7 +7,7 @@ const Pricing = () => {
   const features = [
     "6 Comprehensive Video Modules (6 Hours)",
     "6 Practical Writing Assignments",
-    "Online Access & Streaming", 
+    "Accessible on mobile phone and laptop", 
     "Character Development Worksheets",
     "Plot Structure Frameworks",
     "Publishing Strategy Roadmap",
@@ -38,8 +38,8 @@ const Pricing = () => {
           {/* Main Pricing Card */}
           <Card className="bg-gradient-card border-2 border-primary/30 shadow-golden relative overflow-hidden">
             {/* Popular Badge */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-              <Badge variant="destructive" className="bg-gradient-cta text-accent-foreground px-6 py-2 text-sm font-bold animate-pulse shadow-lg">
+            <div className="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 z-10">
+              <Badge variant="destructive" className="bg-gradient-cta text-white px-4 md:px-6 py-2 text-xs md:text-sm font-bold animate-pulse shadow-lg whitespace-nowrap">
                 🔥 LIMITED TIME OFFER
               </Badge>
             </div>

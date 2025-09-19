@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Pricing />
       <FAQ />
       <Footer />
+      <StickyCTA />
     </main>
   );
 };

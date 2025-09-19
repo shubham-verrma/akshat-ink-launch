@@ -17,10 +17,10 @@ const AuthorSection = () => {
                 alt="Akshat Gupta - Bestselling Author holding The Hidden Hindu books"
                 className="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-golden border border-primary/20"
               />
-              {/* Floating Stats */}
-              <div className="absolute -top-4 -right-4 z-20 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-card">
-                <div className="text-2xl font-bold text-primary">1.6M+</div>
-                <div className="text-sm text-muted-foreground">Followers</div>
+              {/* Floating Stats - Mobile optimized */}
+              <div className="absolute top-4 right-4 md:-top-4 md:-right-4 z-20 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-3 md:p-4 shadow-card">
+                <div className="text-xl md:text-2xl font-bold text-primary">1.6M+</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Followers</div>
               </div>
             </div>
 
@@ -36,40 +36,57 @@ const AuthorSection = () => {
               </div>
 
               {/* Achievements */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-4">
-                  <BookOpen className="w-8 h-8 text-primary mb-2" />
-                  <div className="font-semibold">Bestselling Author</div>
-                  <div className="text-sm text-muted-foreground">The Hidden Hindu Series</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8">
+                <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-3 md:p-4">
+                  <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-primary mb-2" />
+                  <div className="font-semibold text-sm md:text-base">Bestselling Author</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">The Hidden Hindu Series</div>
                 </div>
-                <div className="bg-card/50 backdrop-blur-sm border border-secondary/20 rounded-xl p-4">
-                  <Award className="w-8 h-8 text-secondary mb-2" />
-                  <div className="font-semibold">Literary Excellence</div>
-                  <div className="text-sm text-muted-foreground">Multiple Awards</div>
+                <div className="bg-card/50 backdrop-blur-sm border border-secondary/20 rounded-xl p-3 md:p-4">
+                  <Award className="w-6 h-6 md:w-8 md:h-8 text-secondary mb-2" />
+                  <div className="font-semibold text-sm md:text-base">Literary Excellence</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Multiple Awards</div>
                 </div>
-                <div className="bg-card/50 backdrop-blur-sm border border-accent/20 rounded-xl p-4">
-                  <Instagram className="w-8 h-8 text-accent mb-2" />
-                  <div className="font-semibold">Social Media Star</div>
-                  <div className="text-sm text-muted-foreground">1.6M+ Followers</div>
+                <div className="bg-card/50 backdrop-blur-sm border border-accent/20 rounded-xl p-3 md:p-4">
+                  <Instagram className="w-6 h-6 md:w-8 md:h-8 text-accent mb-2" />
+                  <div className="font-semibold text-sm md:text-base">Social Media Star</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">
+                    <a 
+                      href="https://www.instagram.com/authorakshatgupta/?hl=en" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-accent transition-colors"
+                    >
+                      1.6M+ Followers
+                    </a>
+                  </div>
                 </div>
-                <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-4">
-                  <Podcast className="w-8 h-8 text-primary mb-2" />
-                  <div className="font-semibold">Media Personality</div>
-                  <div className="text-sm text-muted-foreground">Major Podcasts</div>
+                <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-3 md:p-4">
+                  <Podcast className="w-6 h-6 md:w-8 md:h-8 text-primary mb-2" />
+                  <div className="font-semibold text-sm md:text-base">Media Personality</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Major Podcasts</div>
                 </div>
               </div>
 
               {/* Podcast Mentions */}
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Featured On:</h3>
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
+                <h3 className="text-lg md:text-xl font-semibold">Featured On:</h3>
+                <div className="flex flex-wrap gap-2 md:gap-3">
+                  <Badge 
+                    variant="outline" 
+                    className="bg-primary/10 text-primary border-primary/30 cursor-pointer hover:bg-primary/20 transition-colors text-xs md:text-sm"
+                    onClick={() => window.open('https://youtu.be/B-XQYR-G4Dg?si=fuua38x7jDttUod8', '_blank')}
+                  >
                     The Ranveer Show
                   </Badge>
-                  <Badge variant="outline" className="bg-secondary/10 text-secondary border-secondary/30">
+                  <Badge 
+                    variant="outline" 
+                    className="bg-secondary/10 text-secondary border-secondary/30 cursor-pointer hover:bg-secondary/20 transition-colors text-xs md:text-sm"
+                    onClick={() => window.open('https://youtu.be/vsax8o_X660?si=yGqh8BVVZIbHa9qY', '_blank')}
+                  >
                     Pinkvilla
                   </Badge>
-                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 text-xs md:text-sm">
                     And Many More...
                   </Badge>
                 </div>

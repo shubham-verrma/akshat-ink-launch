@@ -75,21 +75,23 @@ const CourseDetails = () => {
               alt="Think To Ink: Book and Film Writing Course with Akshat Gupta"
               className="w-full rounded-2xl shadow-golden border border-primary/20"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-2xl"></div>
-            <div className="absolute bottom-6 left-6 right-6">
-              <div className="flex flex-wrap gap-3 justify-center">
-                <Badge variant="secondary" className="bg-primary/20 text-primary">
-                  <Clock className="w-4 h-4 mr-1" />
-                  6 Hours Content
-                </Badge>
-                <Badge variant="secondary" className="bg-secondary/20 text-secondary">
-                  <FileText className="w-4 h-4 mr-1" />
-                  6 Assignments
-                </Badge>
-                <Badge variant="secondary" className="bg-accent/20 text-accent">
-                  <Play className="w-4 h-4 mr-1" />
-                  At Your Own Pace
-                </Badge>
+            {/* Mobile: Badges below image, Desktop: Over image */}
+            <div className="mt-4 md:mt-0 md:absolute md:inset-0 md:bg-gradient-to-t md:from-background/80 md:to-transparent md:rounded-2xl">
+              <div className="md:absolute md:bottom-6 md:left-6 md:right-6">
+                <div className="flex flex-wrap gap-2 md:gap-3 justify-center">
+                  <Badge variant="secondary" className="bg-primary/20 text-primary text-xs md:text-sm">
+                    <Clock className="w-3 h-3 md:w-4 md:h-4 mr-1" />
+                    6 Hours Content
+                  </Badge>
+                  <Badge variant="secondary" className="bg-secondary/20 text-secondary text-xs md:text-sm">
+                    <FileText className="w-3 h-3 md:w-4 md:h-4 mr-1" />
+                    6 Assignments
+                  </Badge>
+                  <Badge variant="secondary" className="bg-accent/20 text-accent text-xs md:text-sm">
+                    <Play className="w-3 h-3 md:w-4 md:h-4 mr-1" />
+                    At Your Own Pace
+                  </Badge>
+                </div>
               </div>
             </div>
           </div>
