@@ -37,7 +37,10 @@ const AuthorSection = () => {
 
               {/* Achievements */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8">
-                <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-3 md:p-4">
+                <div 
+                  className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-3 md:p-4 cursor-pointer hover:bg-card/70 hover:border-primary/40 transition-all duration-300"
+                  onClick={() => window.open('https://www.amazon.in/dp/B0CK3Y94R9?ref=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&ref_=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&social_share=cm_sw_r_ffobk_cp_ud_dp_1ZZBSSREV7QVV5GS2EX7&bestFormat=true', '_blank')}
+                >
                   <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-primary mb-2" />
                   <div className="font-semibold text-sm md:text-base">Bestselling Author</div>
                   <div className="text-xs md:text-sm text-muted-foreground">The Hidden Hindu Series</div>
