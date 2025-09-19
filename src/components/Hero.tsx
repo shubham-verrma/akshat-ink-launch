@@ -47,14 +47,14 @@ const Hero = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight px-4">
           <span className="text-gradient">Transform Your Ideas</span>
           <br />
           <span className="text-foreground">Into Published Stories</span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed px-4">
           Learn the secrets of fiction writing from <strong className="text-primary">Akshat Gupta</strong>, 
           bestselling author of "The Hidden Hindu" series
         </p>
@@ -96,22 +96,22 @@ const Hero = () => {
         </div>
 
         {/* Course Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-3xl mx-auto px-4">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">5000+</div>
-            <div className="text-muted-foreground">Students Enrolled</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">5000+</div>
+            <div className="text-muted-foreground text-sm md:text-base">Students Enrolled</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">150+</div>
-            <div className="text-muted-foreground">Books Published</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">150+</div>
+            <div className="text-muted-foreground text-sm md:text-base">Books Published</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">6</div>
-            <div className="text-muted-foreground">Modules</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">6</div>
+            <div className="text-muted-foreground text-sm md:text-base">Modules</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">∞</div>
-            <div className="text-muted-foreground">Lifetime Access</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">∞</div>
+            <div className="text-muted-foreground text-sm md:text-base">Lifetime Access</div>
           </div>
         </div>
       </div>

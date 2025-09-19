@@ -27,10 +27,10 @@ const AuthorSection = () => {
             {/* Author Content */}
             <div className="space-y-6">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   Meet <span className="text-gradient">Akshat Gupta</span>
                 </h2>
-                <p className="text-xl text-muted-foreground mb-6">
+                <p className="text-lg md:text-xl text-muted-foreground mb-6">
                   The mastermind behind India's most celebrated mythological fiction series
                 </p>
               </div>
@@ -93,7 +93,7 @@ const AuthorSection = () => {
               </div>
 
               {/* About Text */}
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Akshat Gupta has revolutionized Indian mythological fiction with his compelling storytelling 
                 and deep understanding of ancient wisdom. His ability to weave modern narratives with timeless 
                 truths has made him one of India's most sought-after authors and storytelling experts.
@@ -103,6 +103,7 @@ const AuthorSection = () => {
               <Button 
                 variant="hero" 
                 size="lg"
+                className="w-full sm:w-auto"
                 onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
               >
                 Learn from India's Best selling author

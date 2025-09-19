@@ -83,7 +83,7 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
+    <section className="py-16 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -94,12 +94,13 @@ const MediaCoverage = () => {
           </p>
         </div>
         
-        <div className="relative overflow-hidden">
+        <div className="relative w-full overflow-hidden"
+             style={{ maskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)' }}>
           <div 
-            className="flex animate-scroll gap-4 md:gap-6" 
+            className="flex gap-4 md:gap-6 animate-scroll" 
             style={{
-              animation: 'scroll 40s linear infinite',
-              width: 'calc(280px * 22)' // Adjusted for mobile
+              width: 'max-content',
+              animation: 'scroll-mobile 30s linear infinite'
             }}
             onMouseEnter={(e) => e.currentTarget.style.animationPlayState = 'paused'}
             onMouseLeave={(e) => e.currentTarget.style.animationPlayState = 'running'}
@@ -110,22 +111,22 @@ const MediaCoverage = () => {
             {[...mediaArticles, ...mediaArticles].map((article, index) => (
               <Card 
                 key={index}
-                className="min-w-[260px] md:min-w-[300px] bg-card/80 hover:bg-card transition-all duration-300 border-primary/20 shadow-card cursor-pointer group"
+                className="flex-shrink-0 w-[240px] md:w-[280px] bg-card/80 hover:bg-card transition-all duration-300 border-primary/20 shadow-card cursor-pointer group"
                 onClick={() => window.open(article.url, '_blank')}
               >
-                <CardContent className="p-6">
-                  <div className="flex flex-col gap-4">
-                    <div className={`${article.bgColor} rounded-lg p-3 text-center`}>
-                      <div className={`font-bold text-lg ${article.brandColor}`}>
+                <CardContent className="p-4 md:p-6">
+                  <div className="flex flex-col gap-3 md:gap-4">
+                    <div className={`${article.bgColor} rounded-lg p-2 md:p-3 text-center`}>
+                      <div className={`font-bold text-sm md:text-lg ${article.brandColor}`}>
                         {article.title}
                       </div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-muted-foreground text-sm mb-3">
+                      <p className="text-muted-foreground text-xs md:text-sm mb-2 md:mb-3">
                         {article.description}
                       </p>
-                      <div className="flex items-center gap-2 text-primary text-sm group-hover:text-primary/80 transition-colors">
-                        <ExternalLink className="w-4 h-4" />
+                      <div className="flex items-center gap-2 text-primary text-xs md:text-sm group-hover:text-primary/80 transition-colors">
+                        <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                         <span>Read Article</span>
                       </div>
                     </div>
@@ -138,21 +139,24 @@ const MediaCoverage = () => {
       </div>
       
       <style>{`
-        @keyframes scroll {
+        @keyframes scroll-mobile {
           0% {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-280px * 11));
+            transform: translateX(calc(-240px * 11 - 44px * 11));
           }
         }
         @media (min-width: 768px) {
-          @keyframes scroll {
+          .animate-scroll {
+            animation: scroll-desktop 40s linear infinite !important;
+          }
+          @keyframes scroll-desktop {
             0% {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(calc(-320px * 11));
+              transform: translateX(calc(-280px * 11 - 66px * 11));
             }
           }
         }
