@@ -47,18 +47,16 @@ const AuthorSection = () => {
                   <div className="font-semibold text-sm md:text-base">Literary Excellence</div>
                   <div className="text-xs md:text-sm text-muted-foreground">Multiple Awards</div>
                 </div>
-                <div className="bg-card/50 backdrop-blur-sm border border-accent/20 rounded-xl p-3 md:p-4">
+                <div 
+                  className="bg-card/50 backdrop-blur-sm border border-accent/20 rounded-xl p-3 md:p-4 cursor-pointer hover:bg-card/70 hover:border-accent/40 transition-all duration-300"
+                  onClick={() => window.open('https://www.instagram.com/authorakshatgupta/?hl=en', '_blank')}
+                >
                   <Instagram className="w-6 h-6 md:w-8 md:h-8 text-accent mb-2" />
                   <div className="font-semibold text-sm md:text-base">Social Media Star</div>
                   <div className="text-xs md:text-sm text-muted-foreground">
-                    <a 
-                      href="https://www.instagram.com/authorakshatgupta/?hl=en" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="hover:text-accent transition-colors"
-                    >
+                    <span className="hover:text-accent transition-colors">
                       1.6M+ Followers
-                    </a>
+                    </span>
                   </div>
                 </div>
                 <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-3 md:p-4">
