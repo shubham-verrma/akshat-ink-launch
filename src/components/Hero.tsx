@@ -5,6 +5,15 @@ import { Play, Star, Users, BookOpen } from "lucide-react";
 
 const Hero = () => {
   const scrollToPrice = () => {
+    // Track InitiateCheckout event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout', {
+        content_name: 'Think to Ink Masterclass',
+        content_category: 'Course',
+        value: 2499,
+        currency: 'INR'
+      });
+    }
     window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank');
   };
 

@@ -28,7 +28,18 @@ const StickyCTA = () => {
             <Button 
               variant="secondary"
               className="w-full bg-white text-primary hover:bg-white/90 font-semibold"
-              onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
+              onClick={() => {
+                // Track InitiateCheckout event
+                if (typeof window !== 'undefined' && (window as any).fbq) {
+                  (window as any).fbq('track', 'InitiateCheckout', {
+                    content_name: 'Think to Ink Masterclass',
+                    content_category: 'Course',
+                    value: 2499,
+                    currency: 'INR'
+                  });
+                }
+                window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank');
+              }}
             >
               <BookOpen className="w-4 h-4 mr-2" />
               Enroll Now
