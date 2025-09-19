@@ -77,19 +77,19 @@ const CourseDetails = () => {
             />
             {/* Mobile: Badges below image, Desktop: Over image */}
             <div className="mt-4 md:mt-0 md:absolute md:inset-0 md:bg-gradient-to-t md:from-background/80 md:to-transparent md:rounded-2xl">
-              <div className="md:absolute md:bottom-6 md:left-6 md:right-6">
+              <div className="md:absolute md:bottom-6 md:left-6 md:right-6 max-w-full overflow-hidden">
                 <div className="flex flex-wrap gap-2 md:gap-3 justify-center">
-                  <Badge variant="secondary" className="bg-primary/20 text-primary text-xs md:text-sm">
+                  <Badge variant="secondary" className="bg-primary/20 text-primary text-xs md:text-sm whitespace-nowrap">
                     <Clock className="w-3 h-3 md:w-4 md:h-4 mr-1" />
-                    6 Hours Content
+                    6 Hours
                   </Badge>
-                  <Badge variant="secondary" className="bg-secondary/20 text-secondary text-xs md:text-sm">
+                  <Badge variant="secondary" className="bg-secondary/20 text-secondary text-xs md:text-sm whitespace-nowrap">
                     <FileText className="w-3 h-3 md:w-4 md:h-4 mr-1" />
                     6 Assignments
                   </Badge>
-                  <Badge variant="secondary" className="bg-accent/20 text-accent text-xs md:text-sm">
+                  <Badge variant="secondary" className="bg-accent/20 text-accent text-xs md:text-sm whitespace-nowrap">
                     <Play className="w-3 h-3 md:w-4 md:h-4 mr-1" />
-                    At Your Own Pace
+                    Your Own Pace
                   </Badge>
                 </div>
               </div>

@@ -18,8 +18,8 @@ const AuthorSection = () => {
                 className="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-golden border border-primary/20"
               />
               {/* Floating Stats - Mobile optimized */}
-              <div className="absolute top-4 right-4 md:-top-4 md:-right-4 z-20 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-3 md:p-4 shadow-card">
-                <div className="text-xl md:text-2xl font-bold text-primary">1.6M+</div>
+              <div className="absolute top-2 right-2 md:-top-4 md:-right-4 z-20 bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-2 md:p-4 shadow-card max-w-[80px] md:max-w-none">
+                <div className="text-lg md:text-2xl font-bold text-primary">1.6M+</div>
                 <div className="text-xs md:text-sm text-muted-foreground">Followers</div>
               </div>
             </div>

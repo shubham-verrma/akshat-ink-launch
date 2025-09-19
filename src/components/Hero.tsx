@@ -24,8 +24,8 @@ const Hero = () => {
       
       <div className="relative z-10 container px-4 mx-auto text-center animate-fade-in-up">
         {/* Social Proof Badges */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
-          <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30 backdrop-blur-sm text-xs md:text-sm">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 max-w-full overflow-hidden">
+          <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap">
             <Star className="w-3 h-3 md:w-4 md:h-4 mr-1 fill-current" />
             <a 
               href="https://www.instagram.com/authorakshatgupta/?hl=en" 
@@ -33,16 +33,16 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="hover:text-primary/80 transition-colors"
             >
-              1.6M Instagram Followers
+              1.6M Instagram
             </a>
           </Badge>
-          <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm text-xs md:text-sm">
+          <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap">
             <BookOpen className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             Bestselling Author
           </Badge>
-          <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 backdrop-blur-sm text-xs md:text-sm">
+          <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 backdrop-blur-sm text-xs md:text-sm whitespace-nowrap">
             <Users className="w-3 h-3 md:w-4 md:h-4 mr-1" />
-            Featured on Major Podcasts
+            Major Podcasts
           </Badge>
         </div>
 
