@@ -84,8 +84,8 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4">
             <span className="text-2xl md:text-3xl font-bold text-primary">₹2,499</span>
-            <span className="text-lg md:text-xl text-muted-foreground line-through">₹5,000</span>
-            <Badge variant="destructive" className="animate-pulse text-xs md:text-sm">50% OFF</Badge>
+            <span className="text-lg md:text-xl text-muted-foreground line-through">₹2,999</span>
+            <Badge variant="destructive" className="animate-pulse text-xs md:text-sm">17% OFF</Badge>
           </div>
         </div>
 

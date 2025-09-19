@@ -23,7 +23,7 @@ const StickyCTA = () => {
               Limited Time Offer!
             </div>
             <div className="text-white/90 text-sm mb-3">
-              ₹2,499 <span className="line-through opacity-70">₹5,000</span>
+              ₹2,499 <span className="line-through opacity-70">₹2,999</span>
             </div>
             <Button 
               variant="secondary"

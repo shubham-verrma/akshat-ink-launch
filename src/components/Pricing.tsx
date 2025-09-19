@@ -65,8 +65,8 @@ const Pricing = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-6">
                 <div className="text-4xl md:text-6xl font-bold text-primary">₹2,499</div>
                 <div className="text-center sm:text-right">
-                  <div className="text-xl md:text-2xl text-muted-foreground line-through">₹5,000</div>
-                  <Badge variant="destructive" className="animate-bounce text-xs">Save ₹2,501</Badge>
+                  <div className="text-xl md:text-2xl text-muted-foreground line-through">₹2,999</div>
+                  <Badge variant="destructive" className="animate-bounce text-xs">Save ₹500</Badge>
                 </div>
               </div>
 
