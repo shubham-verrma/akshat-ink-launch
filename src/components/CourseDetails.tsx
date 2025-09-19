@@ -116,7 +116,7 @@ const CourseDetails = () => {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm">
                       <Play className="w-4 h-4 text-primary" />
-                      <span>Approximate 1 hour of videos, then assignments</span>
+                      <span>45 minutes of videos, then assignments</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <FileText className="w-4 h-4 text-secondary" />
