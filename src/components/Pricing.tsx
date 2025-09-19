@@ -123,18 +123,18 @@ const Pricing = () => {
                 <Button 
                   variant="cta" 
                   size="xl" 
-                  className="w-full text-xl py-6"
+                  className="w-full text-base md:text-xl py-4 md:py-6 px-4"
                   onClick={handleEnrollNow}
                 >
-                  🚀 Enroll Now - Start Writing Today!
+                  🚀 Enroll Now
                 </Button>
                 <Button 
                   variant="outline-glow" 
                   size="lg" 
-                  className="w-full"
+                  className="w-full text-sm px-4"
                   onClick={() => window.open('https://wa.me/917477077189?text=Hi! I have questions about the Think to Ink course', '_blank')}
                 >
-                  💬 Have Questions? WhatsApp Us
+                  💬 Questions? WhatsApp Us
                 </Button>
               </div>
 
@@ -153,9 +153,10 @@ const Pricing = () => {
             <Button 
               variant="hero" 
               size="lg"
+              className="text-sm px-4"
               onClick={handleEnrollNow}
             >
-              Take Your First Step Today
+              Take Your First Step
             </Button>
           </div>
         </div>

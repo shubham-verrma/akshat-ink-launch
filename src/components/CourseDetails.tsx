@@ -142,14 +142,15 @@ const CourseDetails = () => {
               ))}
             </div>
             
-            <div className="text-center mt-8">
+            <div className="text-center mt-6">
               <Button 
                 variant="cta" 
-                size="xl"
+                size="lg"
+                className="w-full max-w-xs text-sm px-4"
                 onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
               >
-                <BookOpen className="w-5 h-5 mr-2" />
-                Enroll Now - Limited Time Offer
+                <BookOpen className="w-4 h-4 mr-2" />
+                Enroll Now
               </Button>
             </div>
           </div>
