@@ -147,7 +147,7 @@ const CourseDetails = () => {
                 variant="cta" 
                 size="lg"
                 className="w-full max-w-xs text-sm px-4"
-                onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
+                onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
                 Enroll Now

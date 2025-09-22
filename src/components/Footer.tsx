@@ -20,7 +20,7 @@ const Footer = () => {
             variant="cta" 
             size="xl"
             className="text-sm md:text-base px-4"
-            onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
+            onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}
           >
             🚀 Start Today
           </Button>
@@ -75,7 +75,7 @@ const Footer = () => {
                 </button>
                 <button 
                   className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/b0b77c5d-715f-4425-a337-ff5e24a7cf3f', '_blank')}
+                  onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}
                 >
                   Pricing
                 </button>
