@@ -1,27 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, Twitter, Mail, Phone, MapPin } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-background border-t border-primary/20">
+  return <footer className="bg-background border-t border-primary/20">
       {/* Final CTA Section */}
       <div className="py-16 bg-gradient-card">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Your <span className="text-gradient">Writing Journey</span> Starts Now
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Don't let your stories remain untold. Join the masterclass that has 
-            helped thousands turn their ideas into published works.
-          </p>
-          <Button 
-            variant="cta" 
-            size="xl"
-            className="text-sm md:text-base px-4"
-            onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}
-          >
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">Don't let your stories remain untold. Join the Course that has helped thousands turn their ideas into published works.</p>
+          <Button variant="cta" size="xl" className="text-sm md:text-base px-4" onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}>
             🚀 Start Today
           </Button>
         </div>
@@ -39,25 +28,13 @@ const Footer = () => {
                 Transform your stories from thoughts to published works.
               </p>
               <div className="flex gap-3">
-                <Button 
-                  variant="ghost" 
-                  size="icon"
-                  onClick={() => window.open('https://www.instagram.com/authorakshatgupta/?hl=en', '_blank')}
-                >
+                <Button variant="ghost" size="icon" onClick={() => window.open('https://www.instagram.com/authorakshatgupta/?hl=en', '_blank')}>
                   <Instagram className="w-5 h-5" />
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon"
-                  onClick={() => window.open('https://www.youtube.com/@AkshatGuptaAuthor', '_blank')}
-                >
+                <Button variant="ghost" size="icon" onClick={() => window.open('https://www.youtube.com/@AkshatGuptaAuthor', '_blank')}>
                   <Youtube className="w-5 h-5" />
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon"
-                  onClick={() => window.open('https://x.com/authorakshat?s=11', '_blank')}
-                >
+                <Button variant="ghost" size="icon" onClick={() => window.open('https://x.com/authorakshat?s=11', '_blank')}>
                   <Twitter className="w-5 h-5" />
                 </Button>
               </div>
@@ -67,28 +44,18 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="font-semibold">Quick Links</h4>
               <div className="space-y-2">
-                <button 
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => document.getElementById('course-details')?.scrollIntoView({ behavior: 'smooth' })}
-                >
+                <button className="block text-muted-foreground hover:text-primary transition-colors" onClick={() => document.getElementById('course-details')?.scrollIntoView({
+                behavior: 'smooth'
+              })}>
                   Course Details
                 </button>
-                <button 
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}
-                >
+                <button className="block text-muted-foreground hover:text-primary transition-colors" onClick={() => window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank')}>
                   Pricing
                 </button>
-                <button 
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need support', '_blank')}
-                >
+                <button className="block text-muted-foreground hover:text-primary transition-colors" onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need support', '_blank')}>
                   Support
                 </button>
-                <button 
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => alert('Terms & Conditions')}
-                >
+                <button className="block text-muted-foreground hover:text-primary transition-colors" onClick={() => alert('Terms & Conditions')}>
                   Terms & Conditions
                 </button>
               </div>
@@ -119,12 +86,7 @@ const Footer = () => {
                   <MapPin className="w-4 h-4" />
                   <span>Mumbai, India</span>
                 </div>
-                <Button 
-                  variant="outline-glow" 
-                  size="sm" 
-                  className="mt-4"
-                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need help with the course', '_blank')}
-                >
+                <Button variant="outline-glow" size="sm" className="mt-4" onClick={() => window.open('https://wa.me/917477077189?text=Hi! I need help with the course', '_blank')}>
                   WhatsApp Support
                 </Button>
               </div>
@@ -138,22 +100,13 @@ const Footer = () => {
                 © {currentYear} Think to Ink Masterclass. All rights reserved.
               </p>
               <div className="flex gap-6 text-sm text-muted-foreground">
-                <button 
-                  className="hover:text-primary transition-colors"
-                  onClick={() => alert('Privacy Policy')}
-                >
+                <button className="hover:text-primary transition-colors" onClick={() => alert('Privacy Policy')}>
                   Privacy Policy
                 </button>
-                <button 
-                  className="hover:text-primary transition-colors"
-                  onClick={() => alert('Terms & Conditions')}
-                >
+                <button className="hover:text-primary transition-colors" onClick={() => alert('Terms & Conditions')}>
                   Terms & Conditions
                 </button>
-                <button 
-                  className="hover:text-primary transition-colors"
-                  onClick={() => alert('Contact Us')}
-                >
+                <button className="hover:text-primary transition-colors" onClick={() => alert('Contact Us')}>
                   Contact Us
                 </button>
               </div>
@@ -165,8 +118,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
