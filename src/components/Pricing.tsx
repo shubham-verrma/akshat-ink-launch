@@ -2,20 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, Shield, Award, CreditCard, Smartphone } from "lucide-react";
-
 const Pricing = () => {
-  const features = [
-    "6 Comprehensive Video Modules (6 Hours)",
-    "6 Practical Writing Assignments",
-    "Accessible on mobile phone and laptop", 
-    "Character Development Worksheets",
-    "Plot Structure Frameworks",
-    "Publishing Strategy Roadmap",
-    "Industry Insider Tips & Secrets",
-    "Lifetime Access - No Expiry",
-    "Mobile & Desktop Compatible"
-  ];
-
+  const features = ["6 Comprehensive Video Modules (6 Hours)", "6 Practical Writing Assignments", "Accessible on mobile phone and laptop", "Character Development Worksheets", "Plot Structure Frameworks", "Publishing Strategy Roadmap", "Industry Insider Tips & Secrets", "Lifetime Access - No Expiry", "Mobile & Desktop Compatible"];
   const handleEnrollNow = () => {
     // Track InitiateCheckout event
     if (typeof window !== 'undefined' && (window as any).fbq) {
@@ -28,9 +16,7 @@ const Pricing = () => {
     }
     window.open('https://akshatgupta.exlyapp.com/checkout/89cfdd52-1c6b-4576-b70e-b6b3e0c97342', '_blank');
   };
-
-  return (
-    <section id="pricing" className="py-20 bg-background">
+  return <section id="pricing" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -54,9 +40,7 @@ const Pricing = () => {
             </div>
 
             <CardHeader className="text-center pt-12 pb-6">
-              <CardTitle className="text-3xl md:text-4xl font-bold mb-4">
-                Think to Ink Masterclass
-              </CardTitle>
+              <CardTitle className="text-3xl md:text-4xl font-bold mb-4">Think to Ink Course</CardTitle>
               <p className="text-muted-foreground text-lg mb-6">
                 Complete Book & Film Writing Course by Akshat Gupta
               </p>
@@ -79,12 +63,10 @@ const Pricing = () => {
             <CardContent className="space-y-8">
               {/* Features List */}
               <div className="grid md:grid-cols-2 gap-3">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {features.map((feature, index) => <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               {/* Payment Options */}
@@ -129,20 +111,10 @@ const Pricing = () => {
 
               {/* CTA Buttons */}
               <div className="space-y-4">
-                <Button 
-                  variant="cta" 
-                  size="xl" 
-                  className="w-full text-base md:text-xl py-4 md:py-6 px-4"
-                  onClick={handleEnrollNow}
-                >
+                <Button variant="cta" size="xl" className="w-full text-base md:text-xl py-4 md:py-6 px-4" onClick={handleEnrollNow}>
                   🚀 Enroll Now
                 </Button>
-                <Button 
-                  variant="outline-glow" 
-                  size="lg" 
-                  className="w-full text-sm px-4"
-                  onClick={() => window.open('https://wa.me/917477077189?text=Hi! I have questions about the Think to Ink course', '_blank')}
-                >
+                <Button variant="outline-glow" size="lg" className="w-full text-sm px-4" onClick={() => window.open('https://wa.me/917477077189?text=Hi! I have questions about the Think to Ink course', '_blank')}>
                   💬 Questions? WhatsApp Us
                 </Button>
               </div>
@@ -159,19 +131,12 @@ const Pricing = () => {
             <p className="text-lg text-muted-foreground mb-4">
               Still thinking? Remember, every bestselling author started with a single step.
             </p>
-            <Button 
-              variant="hero" 
-              size="lg"
-              className="text-sm px-4"
-              onClick={handleEnrollNow}
-            >
+            <Button variant="hero" size="lg" className="text-sm px-4" onClick={handleEnrollNow}>
               Take Your First Step
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Pricing;
