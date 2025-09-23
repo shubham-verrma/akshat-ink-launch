@@ -80,7 +80,7 @@ const Hero = () => {
             Think to Ink
           </h2>
           <p className="text-base md:text-lg text-muted-foreground">
-            Book and Film Writing Masterclass
+            Book and Film Writing Course
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4">
             <span className="text-2xl md:text-3xl font-bold text-primary">₹2,499</span>
